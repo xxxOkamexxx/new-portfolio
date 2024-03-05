@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navMenuItem{
+  position: relative;
+  color: var(--neutralMedium);
+}
+
+.navMenuItem:after {
+  content: "";
+  position: absolute;
+  background-color: var(--mainColorOrange);
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.4s;
+}
+
+.navMenuItem:hover {
+  color: var(--mainColorOrange);
+  font-weight: 500;
+}
+
+.navMenuItem:hover:after {
+  width: 100%;
+}
