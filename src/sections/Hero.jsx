@@ -7,7 +7,6 @@ import Logo from '@/components/Logo';
 import SnsLinkButtons from '@/components/SnsLinkButtons'
 
 import { styles } from '@/styles'
-import '../styles/hero.css'
 
 
 const Hero = () => {
@@ -20,20 +19,22 @@ const Hero = () => {
     >
       <div className='flex flex-col md:flex-row md:justify-between gap-6 items-center'>
 
-        <div className='w-[100%] h-[350px] bg-gray-200 flex justify-center items-center relative'>       
+        {/* Hero Image */}
+        <div className='w-[100%] max-w-[600px] h-[350px] bg-gray-200 flex justify-center items-center relative'>       
           <FaImage size={36} /> 
           <Logo />    
         </div>
 
+        {/* Hero Texts */}
         <div>
           <div className='flex flex-col md:flex-row md:justify-between items-center gap-4'>
             <div className='w-[100%]'>
 
-              <h1 className='text-2xl text-mainColorOrange font-bold'>
-                Hi, I’m Chikage Takahashi Molander
+              <h1 className='text-4xl text-mainColorOrange font-extrabold'>
+                Hi, I’m Chikage
               </h1>
 
-              <h3 className='text-lg text-neutralDark font-semibold'>
+              <h3 className={` ${styles.headline3} text-neutralDark pb-4`} >
                 Frontend developer / UX-designer / UI-designer
               </h3>
 

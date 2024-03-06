@@ -24,6 +24,25 @@
   --subColorOrange: #F3B79D;
 }
 
+@layer components {
+
+  /* Skills */
+  .skillsList {
+    @apply flex flex-wrap gap-2 pb-6
+  }
+
+  .skillIcon {
+    @apply  p-2 text-neutralDark;
+  }
+
+  .skillItem {
+    @apply px-4 py-2 bg-neutralLight shadow-sm text-neutralDark
+  }
+
+  
+}
+
+
 /* Ellipse 1 */
 .ellipse01 {
   position: absolute;

@@ -17,7 +17,15 @@ export const styles = {
   navPadding: 'pt-[98px]',
 
   // font size
-
+  pageTitle: 'text-neutralDark',
+  cvCategory: 'text-mainColorOrange pb-2',
+  headline1: 'text-2xl font-bold',
+  headline2: 'text-xl font-semibold',
+  headline3: 'text-lg font-semibold',
+  headline4: 'text-base font-bold ',
+  headline5: 'text-sm font-semibold',
+  pText: 'text-sm font-normal',
+  textSmall: 'text-xs',
 
   // Buttons
   ctaBtn: 'px-6 py-3 flex gap-2 items-center text-sm justify-center shadow-lg md:w-fit'
