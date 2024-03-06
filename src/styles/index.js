@@ -20,5 +20,5 @@ export const styles = {
 
 
   // Buttons
-  ctaBtn: 'px-6 py-3 flex gap-2 items-center text.sm justify-center'
+  ctaBtn: 'px-6 py-3 flex gap-2 items-center text-sm justify-center shadow-lg md:w-fit'
 }
