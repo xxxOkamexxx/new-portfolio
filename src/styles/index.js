@@ -14,8 +14,11 @@ export const styles = {
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-start items-start',
   flexEnd: 'flex justify-end',
-  navPadding: 'pt-[98px]'
+  navPadding: 'pt-[98px]',
 
   // font size
 
+
+  // Buttons
+  ctaBtn: 'px-6 py-3 flex gap-2 items-center text.sm justify-center'
 }
