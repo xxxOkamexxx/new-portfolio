@@ -37,18 +37,18 @@ const About = () => {
               <FaImage size={36} />
             </div>
 
-            <div className={`${styles.pText}text-left leading-6 pb-4`}>
+            <div className={`${styles.pText} text-left leading-6 pb-4`}>
               Hello, I am a UX/UI designer and front-end developer. <br />
               With a background in design and technical expertise, I have refined my sense of aesthetics and usability through experiences in architecture, fashion, and textile design. My main objective is to deliver user-friendly and visually appealing web solutions. Focusing on front-end development allows me to leverage a diverse range of design skills to create captivating interfaces and experiences. I am committed to improving the user's online journey by combining technical know-how with a creative perspective.<br />
               Additionally, my unique cultural perspective from growing up in Japan will be invaluable to the team in today's diverse environment.
             </div>
 
             {/* Button */}
-            <div>
-              <div className={`${styles.ctaBtn} bg-mainColorDark text-neutralLight`}>
+            <div className='flex flex-col md:flex-row justify-starts'>
+              <button className={`${styles.ctaBtn} bg-mainColorDark text-neutralLight`}>
                 <span>Download CV</span>
                 <span><MdOutlineFileDownload /></span>
-              </div>
+              </button>
             </div>
           </div>
         </div>

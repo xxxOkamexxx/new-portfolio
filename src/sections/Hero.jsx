@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 import { MdOutlineLocalPostOffice, MdOutlineFileDownload } from "react-icons/md";
 import { FaImage } from "react-icons/fa";
@@ -45,22 +46,28 @@ const Hero = () => {
 
             {/* Sns-Link Group */}
             <div className='pt-4 md:pt-0'>
-              <SnsLinkButtons />
+              <div className='flex flex-row md:flex-col gap-4'>
+                <SnsLinkButtons />
+              </div>
             </div>       
           </div>
 
           {/* Buttons Group */}
           <div className='flex flex-col md:flex-row justify-start gap-4 pt-8'> 
                     
-            <div className={`${styles.ctaBtn} bg-mainColorDark text-neutralLight`}>
+            <button 
+              className={`${styles.ctaBtn} bg-mainColorDark text-neutralLight`}
+            >
               <span>Contact Me</span>
               <span><MdOutlineLocalPostOffice /></span>
-            </div>
+            </button>
 
-            <div className={`${styles.ctaBtn} bg-mainColorOrange text-neutralLight`}>
+            <button 
+              className={`${styles.ctaBtn} bg-mainColorOrange text-neutralLight`}
+            >
               <span>Download CV</span>
               <span><MdOutlineFileDownload /></span>
-            </div>
+            </button>
 
           </div>
         </div>

@@ -7,10 +7,10 @@ import Link from 'next/link'
 const SnsLinkButtons = () => {
 
   return (
-    <div className='flex flex-row md:flex-col gap-4'>
+    <>
       
      {LinkItems.map(item => (
-      <div className='bg-white rounded-full shadow-lg p-2'>
+      <div className='bg-white/50 rounded-full shadow-lg p-2'>
         <Link
           key={item.id}
           href={item.url}
@@ -21,7 +21,7 @@ const SnsLinkButtons = () => {
       </div>
      ))}
 
-    </div>
+    </>
   )
 }
 

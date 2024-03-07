@@ -28,5 +28,5 @@ export const styles = {
   textSmall: 'text-xs',
 
   // Buttons
-  ctaBtn: 'px-6 py-3 flex gap-2 items-center text-sm justify-center shadow-lg md:w-fit'
+  ctaBtn: 'px-6 py-3 flex gap-2 items-center text-sm justify-center shadow-lg md:w-fit tracking-wider min-w-[200px]'
 }

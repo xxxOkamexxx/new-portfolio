@@ -38,4 +38,3 @@ export const LinkItems = [
     icon: <FaDribbbleSquare size={20}  />
   },
 ]
-
