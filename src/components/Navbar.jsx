@@ -1,11 +1,19 @@
+'use client'
+
 import { MenuItems } from "@/constans"
 import Link from "next/link"
 import { styles } from '../styles/index'
 import '../styles/nav.css'
+import { motion } from 'framer-motion';
+import { navVariants } from '@/utils/motion';
 
 const Navbar = () => {
   return (  
-    <nav className={`${styles.innerWidth}`}>
+    <motion.nav 
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.innerWidth}`}>
       <div className={`${styles.xPaddings} ${styles.flexEnd} ${styles.navPadding} gap-6`}>
         {MenuItems.map(item => (
           <Link 
@@ -17,7 +25,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-    </nav> 
+    </motion.nav> 
   )
 }
 

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link';
 
@@ -8,6 +10,8 @@ import Logo from '@/components/Logo';
 import SnsLinkButtons from '@/components/SnsLinkButtons'
 
 import { styles } from '@/styles'
+import { motion } from 'framer-motion';
+import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
 
 
 const Hero = () => {
@@ -18,38 +22,59 @@ const Hero = () => {
       id='home' 
       className={`${styles.xPaddings} ${styles.yPaddings}`}
     >
-      <div className='flex flex-col lg:flex-row lg:justify-between gap-6 items-center'>
+      <motion.div 
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className='flex flex-col lg:flex-row lg:justify-between gap-6 items-center'
+      >
 
         {/* Hero Image */}
-        <div className='w-[100%] max-w-[600px] h-[350px] bg-gray-200 flex justify-center items-center relative'>       
+        <motion.div 
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className='w-[100%] max-w-[600px] h-[350px] bg-gray-200 flex justify-center items-center relative'
+        >       
           <FaImage size={36} /> 
           <Logo />    
-        </div>
+        </motion.div>
 
         {/* Hero Texts */}
         <div>
           <div className='flex flex-col md:flex-row lg:justify-between items-center gap-4'>
             <div className='w-[100%]'>
 
-              <h1 className='text-4xl text-mainColorOrange font-extrabold'>
+              <motion.h1 
+                variants={textVariant(0.5)}
+                className='text-4xl text-mainColorOrange font-extrabold'
+              >
                 Hi, I’m Chikage
-              </h1>
+              </motion.h1>
 
-              <h3 className={` ${styles.headline3} text-neutralDark pb-4`} >
+              <motion.h3
+                 variants={textVariant(0.8)} 
+                className={` ${styles.headline3} text-neutralDark pb-4`} 
+              >
                 Frontend developer  UX/UI-designer
-              </h3>
+              </motion.h3>
 
-              <p className='text-base'>
+              <motion.p 
+                variants={textVariant(1.1)}
+                className='text-base'
+              >
                 I am a front-end developer and UX/UI designer passionate about building user-friendly and visually appealing web solutions.
-              </p>
+              </motion.p>
             </div>
 
             {/* Sns-Link Group */}
-            <div className='pt-4 md:pt-0'>
+            <motion.div 
+              variants={slideIn('right', 'tween', 0.2, 1)}
+              className='pt-4 md:pt-0'
+            >
               <div className='flex flex-row md:flex-col gap-4'>
                 <SnsLinkButtons />
               </div>
-            </div>       
+            </motion.div>       
           </div>
 
           {/* Buttons Group */}
@@ -73,7 +98,7 @@ const Hero = () => {
         </div>
       
 
-      </div>
+      </motion.div>
     </section>
   )
 }

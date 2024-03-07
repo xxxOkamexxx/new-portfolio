@@ -7,6 +7,9 @@ import { FaImage } from "react-icons/fa";
 
 import { styles } from '@/styles'
 import '../styles/nav.css'
+import { motion } from 'framer-motion';
+import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
+
 
 import Skills from '@/components/CV/Skills';
 import Education from '@/components/CV/Education';
@@ -23,10 +26,19 @@ const About = () => {
       className={`${styles.yPaddings}`}
     >
 
-      <div className={`bg-subColorOrange relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }} 
+        className={`bg-subColorOrange relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}
+      >
 
         {/* General Info */}
-        <div className='bg-white w-[100%] :w-[40%] flex flex-col p-4 gap-4'>
+        <motion.div 
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 gap-4'
+        >
 
           <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
             About Me
@@ -51,10 +63,13 @@ const About = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* CV */}
-        <div className='bg-white w-[100%] lg:w-[60%] flex flex-col justify-between'>
+        <motion.div 
+          variants={slideIn('right', 'tween', 0.2, 1)}
+          className='bg-white w-[100%] lg:w-[60%] flex flex-col justify-between'
+        >
           <div>
             {/* Menu bar */}
             <div className='aboutMenu grid grid-cols-3 text-center py-4'>
@@ -95,9 +110,9 @@ const About = () => {
 
           </div>
 
-        </div>
+        </motion.div>
 
-      </div>
+      </motion.div>
 
     </section>
   )
