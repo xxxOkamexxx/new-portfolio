@@ -39,7 +39,6 @@
   .skillItem {
     @apply px-4 py-2 bg-neutralLight shadow-sm text-neutralDark
   }
-
   
 }
 
@@ -85,3 +84,5 @@
   transform-origin: 0 75px; 
   /* .logoWrapper size=150px (150/2 = 75px) */
 }
+
+

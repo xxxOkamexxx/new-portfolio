@@ -23,10 +23,10 @@ const About = () => {
       className={`${styles.yPaddings}`}
     >
 
-      <div className={`bg-subColorOrange relative flex md:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}>
+      <div className={`bg-subColorOrange relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}>
 
         {/* General Info */}
-        <div className='bg-white w-[100%] md:w-[40%] flex flex-col p-4 gap-4'>
+        <div className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 gap-4'>
 
           <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
             About Me
@@ -44,8 +44,8 @@ const About = () => {
             </div>
 
             {/* Button */}
-            <div className='flex flex-col md:flex-row justify-starts'>
-              <button className={`${styles.ctaBtn} bg-mainColorDark text-neutralLight`}>
+            <div className='flex flex-col lg:flex-row justify-starts'>
+              <button className={`${styles.btn} bg-mainColorDark text-neutralLight`}>
                 <span>Download CV</span>
                 <span><MdOutlineFileDownload /></span>
               </button>
@@ -54,13 +54,13 @@ const About = () => {
         </div>
 
         {/* CV */}
-        <div className='bg-white w-[100%] md:w-[60%] flex flex-col justify-between'>
+        <div className='bg-white w-[100%] lg:w-[60%] flex flex-col justify-between'>
           <div>
             {/* Menu bar */}
             <div className='aboutMenu grid grid-cols-3 text-center py-4'>
 
               <div 
-                className={'text-neutralDark text-[16px] hover:text-mainColorOrange'}
+                className='aboutMenu'
                 onClick={() => setItem('skills')}
               >
                 Skills

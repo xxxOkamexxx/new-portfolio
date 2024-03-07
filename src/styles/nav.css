@@ -30,3 +30,8 @@
 .navMenuItem:hover:after {
   width: 100%;
 }
+
+.btnAnimation:hover {
+  transition: 1s;
+  
+}

@@ -1,8 +1,12 @@
-import React from 'react'
+'use client'
 
+import React from 'react'
+import Link from 'next/link'
 
 import { LinkItems } from '@/constans'
-import Link from 'next/link'
+
+import { motion } from "framer-motion";
+
 
 const SnsLinkButtons = () => {
 
@@ -10,15 +14,19 @@ const SnsLinkButtons = () => {
     <>
       
      {LinkItems.map(item => (
-      <div className='bg-white/50 rounded-full shadow-lg p-2'>
+      <motion.div 
+        key={item.id}
+        whileHover={{ scale: 1.2 }} 
+        whileTap={{ scale: 0.8 }} 
+        className='bg-white/50 rounded-full shadow-lg p-2 hover:bg-focusColor/20'
+      >
         <Link
-          key={item.id}
           href={item.url}
           target='_blank'
         >
           {item.icon}
         </Link>
-      </div>
+      </motion.div>
      ))}
 
     </>

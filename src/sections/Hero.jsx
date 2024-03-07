@@ -18,7 +18,7 @@ const Hero = () => {
       id='home' 
       className={`${styles.xPaddings} ${styles.yPaddings}`}
     >
-      <div className='flex flex-col md:flex-row md:justify-between gap-6 items-center'>
+      <div className='flex flex-col lg:flex-row lg:justify-between gap-6 items-center'>
 
         {/* Hero Image */}
         <div className='w-[100%] max-w-[600px] h-[350px] bg-gray-200 flex justify-center items-center relative'>       
@@ -28,7 +28,7 @@ const Hero = () => {
 
         {/* Hero Texts */}
         <div>
-          <div className='flex flex-col md:flex-row md:justify-between items-center gap-4'>
+          <div className='flex flex-col md:flex-row lg:justify-between items-center gap-4'>
             <div className='w-[100%]'>
 
               <h1 className='text-4xl text-mainColorOrange font-extrabold'>
@@ -56,14 +56,14 @@ const Hero = () => {
           <div className='flex flex-col md:flex-row justify-start gap-4 pt-8'> 
                     
             <button 
-              className={`${styles.ctaBtn} bg-mainColorDark text-neutralLight`}
+              className={`${styles.btn} bg-mainColorDark text-neutralLight`}
             >
               <span>Contact Me</span>
               <span><MdOutlineLocalPostOffice /></span>
             </button>
 
             <button 
-              className={`${styles.ctaBtn} bg-mainColorOrange text-neutralLight`}
+              className={`${styles.btn} bg-mainColorOrange text-neutralLight`}
             >
               <span>Download CV</span>
               <span><MdOutlineFileDownload /></span>
