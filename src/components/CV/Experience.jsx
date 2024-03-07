@@ -1,8 +1,18 @@
 import React from 'react'
 
+import { styles } from '@/styles'
+
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <div>
+      <h3 className={`${styles.cvCategory} ${styles.headline4}`}>
+        Experience
+      </h3>
+
+      <div>
+        
+      </div>
+    </div>
   )
 }
 

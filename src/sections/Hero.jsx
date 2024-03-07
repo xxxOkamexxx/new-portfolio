@@ -35,7 +35,7 @@ const Hero = () => {
               </h1>
 
               <h3 className={` ${styles.headline3} text-neutralDark pb-4`} >
-                Frontend developer / UX-designer / UI-designer
+                Frontend developer  UX/UI-designer
               </h3>
 
               <p className='text-base'>

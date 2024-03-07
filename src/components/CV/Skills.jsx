@@ -45,7 +45,9 @@ const Skills = () => {
 
   return (
     <div>
-      <h3 className={`${styles.cvCategory} ${styles.headline4}`}>Skills</h3>
+      <h3 className={`${styles.cvCategory} ${styles.headline4}`}>
+        Skills
+      </h3>
 
       {/* Frontend */}
       <div className={`${styles.headline5}`}>       
