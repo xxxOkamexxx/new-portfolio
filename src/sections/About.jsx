@@ -1,17 +1,17 @@
 'use client'
 
 import React,{ useState } from 'react'
-import { MdOutlineFileDownload } from "react-icons/md";
 
+import { MdOutlineFileDownload } from "react-icons/md";
 import { FaImage } from "react-icons/fa";
 
 import { styles } from '@/styles'
 import '../styles/nav.css'
 
-
 import Skills from '@/components/CV/Skills';
 import Education from '@/components/CV/Education';
 import Experience from '@/components/CV/Experience';
+
 
 const About = () => {
   const [item, setItem] = useState('skills')
@@ -26,7 +26,7 @@ const About = () => {
       <div className={`bg-subColorOrange relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}>
 
         {/* General Info */}
-        <div className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 gap-4'>
+        <div className='bg-white w-[100%] :w-[40%] flex flex-col p-4 gap-4'>
 
           <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
             About Me
@@ -39,8 +39,8 @@ const About = () => {
 
             <div className={`${styles.pText} text-left leading-6 pb-4`}>
               Hello, I am a UX/UI designer and front-end developer. <br />
-              With a background in design and technical expertise, I have refined my sense of aesthetics and usability through experiences in architecture, fashion, and textile design. My main objective is to deliver user-friendly and visually appealing web solutions. Focusing on front-end development allows me to leverage a diverse range of design skills to create captivating interfaces and experiences. I am committed to improving the user's online journey by combining technical know-how with a creative perspective.<br />
-              Additionally, my unique cultural perspective from growing up in Japan will be invaluable to the team in today's diverse environment.
+              With a background in design and technical expertise, I have refined my sense of aesthetics and usability through experiences in architecture, fashion, and textile design. My main objective is to deliver user-friendly and visually appealing web solutions. Focusing on front-end development allows me to leverage a diverse range of design skills to create captivating interfaces and experiences. I am committed to improving the user&apos;s online journey by combining technical know-how with a creative perspective.<br />
+              Additionally, my unique cultural perspective from growing up in Japan will be invaluable to the team in today&apos;s diverse environment.
             </div>
 
             {/* Button */}
