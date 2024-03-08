@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.activeMenu {
+  position: relative;
+  color: var(--mainColorOrange);
+}
+
+.activeMenu:after {
+  content: "";
+  position: absolute;
+  background-color: var(--mainColorOrange);
+  height: 4px;
+  width: 50%;
+  left: 25%;
+  bottom: -8px;
+  transition: 0.4s;
+}

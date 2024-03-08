@@ -6,7 +6,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { FaImage } from "react-icons/fa";
 
 import { styles } from '@/styles'
-import '../styles/nav.css'
+import '../styles/about.css'
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
 
@@ -18,6 +18,21 @@ import Experience from '@/components/CV/Experience';
 
 const About = () => {
   const [item, setItem] = useState('skills')
+
+  const cvMenuItems = [
+    {
+      id: 'skills',
+      title: 'Skills',
+    },
+    {
+      id: 'experience',
+      title: 'Experience',
+    },
+    {
+      id: 'education',
+      title: 'Education',
+    },
+  ]
  
 
   return (
@@ -31,7 +46,7 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }} 
-        className={`bg-subColor relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}
+        className={`bg-neutralMedium relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}
       >
 
         {/* General Info */}
@@ -72,31 +87,22 @@ const About = () => {
         >
           <div>
             {/* Menu bar */}
-            <div className='aboutMenu grid grid-cols-3 text-center py-4'>
+            <div className='grid grid-cols-3 text-center py-4'>
 
-              <div 
-                className='aboutMenu'
-                onClick={() => setItem('skills')}
-              >
-                Skills
-              </div>
-
-              <div 
-                onClick={() => setItem('experience')}
-              >
-                Experience
-              </div>
-
-              <div 
-                onClick={() => setItem('education')}
-              >
-                Education
-              </div>
+              {cvMenuItems.map(menu => 
+                <div 
+                  key={menu.id}
+                  onClick={() => setItem(`${menu.id}`)}
+                  className={`text-neutralDark font-semibold py-2 ${item === menu.id ? 'activeMenu' : ''}`}
+                >
+                  {menu.title}
+                </div>
+              )}
 
             </div>
 
             {/* CV display */}
-            <div className='p-4'>
+            <div className='p-4 pt-4'>
               {
                 item === 'skills' && <Skills />
               }

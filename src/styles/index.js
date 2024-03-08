@@ -32,4 +32,9 @@ export const styles = {
 
   // Project card
   projectCard: 'h-[150px] bg-white text-center align-middle',
+
+  // Timeline UI
+  timelineCircle: 'absolute top-0 left-2 rounded-full w-4 h-4 bg-mainColorOrange z-20',
+  timelineBar: 'absolute top-2 left-3 bg-neutralMedium w-2 h-[100%] z-10',
+
 }
