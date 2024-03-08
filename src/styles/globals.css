@@ -4,7 +4,7 @@
 
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 * {
@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -21,8 +21,8 @@
   --neutralDark: #757372;
   --neutralMedium: #B9B8B8;
   --neutralLight: #FCFCFC;
-  --subColorOrange: #F3B79D;
-  --focusColor: #0098c6;
+  --subColor: #d8d4c1;
+  --focusColor: #30b9e3;
 }
 
 @layer components {

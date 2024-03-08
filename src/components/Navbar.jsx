@@ -13,7 +13,9 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.innerWidth}`}>
+      className={`${styles.innerWidth}`}
+    >
+
       <div className={`${styles.xPaddings} ${styles.flexEnd} ${styles.navPadding} gap-6`}>
         {MenuItems.map(item => (
           <Link 
@@ -25,6 +27,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
+      
     </motion.nav> 
   )
 }

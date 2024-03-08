@@ -15,8 +15,8 @@ module.exports = {
       neutralDark: '#757372',
       neutralMedium: '#B9B8B8',
       neutralLight: '#FCFCFC',
-      subColorOrange: '#F3B79D',
-      focusColor: '#0098c6'
+      subColor: '#d8d4c1',
+      focusColor: '#30b9e3'
      }
     },
   },

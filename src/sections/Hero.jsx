@@ -33,7 +33,7 @@ const Hero = () => {
         {/* Hero Image */}
         <motion.div 
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className='w-[100%] max-w-[600px] h-[350px] bg-gray-200 flex justify-center items-center relative'
+          className='w-[100%] lg:w-[60vw] h-[350px] bg-gray-200 flex justify-center items-center relative'
         >       
           <FaImage size={36} /> 
           <Logo />    
@@ -46,21 +46,21 @@ const Hero = () => {
 
               <motion.h1 
                 variants={textVariant(0.5)}
-                className='text-4xl text-mainColorOrange font-extrabold'
+                className='text-4xl text-mainColorOrange font-extrabold tracking-wide'
               >
                 Hi, I’m Chikage
               </motion.h1>
 
               <motion.h3
                  variants={textVariant(0.8)} 
-                className={` ${styles.headline3} text-neutralDark pb-4`} 
+                className={` ${styles.headline3} text-neutralDark pb-4 tracking-wide`} 
               >
                 Frontend developer  UX/UI-designer
               </motion.h3>
 
               <motion.p 
                 variants={textVariant(1.1)}
-                className='text-base'
+                className='text-base tracking-wide leading-7'
               >
                 I am a front-end developer and UX/UI designer passionate about building user-friendly and visually appealing web solutions.
               </motion.p>

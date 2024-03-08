@@ -31,7 +31,7 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }} 
-        className={`bg-subColorOrange relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}
+        className={`bg-subColor relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}
       >
 
         {/* General Info */}
@@ -49,11 +49,11 @@ const About = () => {
               <FaImage size={36} />
             </div>
 
-            <div className={`${styles.pText} text-left leading-6 pb-4`}>
+            <p className={`${styles.pText} text-left leading-6 pb-4`}>
               Hello, I am a UX/UI designer and front-end developer. <br />
               With a background in design and technical expertise, I have refined my sense of aesthetics and usability through experiences in architecture, fashion, and textile design. My main objective is to deliver user-friendly and visually appealing web solutions. Focusing on front-end development allows me to leverage a diverse range of design skills to create captivating interfaces and experiences. I am committed to improving the user&apos;s online journey by combining technical know-how with a creative perspective.<br />
               Additionally, my unique cultural perspective from growing up in Japan will be invaluable to the team in today&apos;s diverse environment.
-            </div>
+            </p>
 
             {/* Button */}
             <div className='flex flex-col lg:flex-row justify-starts'>

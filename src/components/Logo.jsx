@@ -2,11 +2,12 @@ import { styles } from '@/styles'
 import React from 'react'
 
 const Logo = () => {
-  const texts = 'Creative UX/UIDesigner Frontend Developer - '
+  const texts = 'Creative UX/UI Designer Frontend Developer - '
   const logoText = texts.split('').map((text, i) => (
     <span 
       key={i}
-      style={{ transform: `rotate(${i * 8.25}deg)` }}
+      style={{ transform: `rotate(${i * 8.2}deg)` }}
+      className='uppercase font-mono'
     >
       {text}
     </span>

@@ -18,7 +18,7 @@ const SnsLinkButtons = () => {
         key={item.id}
         whileHover={{ scale: 1.2 }} 
         whileTap={{ scale: 0.8 }} 
-        className='bg-white/50 rounded-full shadow-lg p-2 hover:bg-focusColor/20'
+        className='bg-white/20 rounded-full shadow-lg p-2 hover:bg-focusColor/100 hover:text-white'
       >
         <Link
           href={item.url}
