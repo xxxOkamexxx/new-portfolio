@@ -24,7 +24,7 @@ const Contact = () => {
           {/* Contact form */}
           <div >
             <p className='pb-6'>
-              Thank you for your interest. If you have any job requests or questions, please feel free to contact us. I look forward to assisting you
+              Thank you for your interest. If you have any job requests or questions, please feel free to contact me. I look forward to assisting you
             </p>
 
             <div className='flex flex-col md:flex-row justify-starts'>
