@@ -61,6 +61,12 @@
   background-color: var(--mainColorDark);
   color: var(--neutralLight);
   font-size: 0.9rem;
+  transition: 1s;
+}
+.logoWrapper:hover
+.logo-circle {
+  background-color: var(--focusColor);
+  transform: scale(1.1);
 }
 
 .logo-text {
@@ -84,5 +90,6 @@
   transform-origin: 0 75px; 
   /* .logoWrapper size=150px (150/2 = 75px) */
 }
+
 
 

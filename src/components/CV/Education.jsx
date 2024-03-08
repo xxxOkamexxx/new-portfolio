@@ -16,7 +16,7 @@ const Education = () => {
       start: 'Sep.2010',
       end: 'Jun.2012',
       school: 'Tau Learning',
-      course: 'Textiles Faehion Design',
+      course: 'Textiles and Fashion Design',
       locate: 'Malmö, Sweden',
     },
     {

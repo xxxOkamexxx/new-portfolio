@@ -22,16 +22,18 @@ const Contact = () => {
 
 
           {/* Contact form */}
-          <div>
+          <div >
+            <p className='pb-6'>
+              Thank you for your interest. If you have any job requests or questions, please feel free to contact us. I look forward to assisting you
+            </p>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium! Impedit saepe eum veritatis iste aperiam recusandae! Cupiditate, quasi aliquid enim suscipit incidunt sunt doloribus fugit asperiores pariatur. Soluta, esse.</p>
-
-              <div className='flex flex-col md:flex-row justify-starts'>
+            <div className='flex flex-col md:flex-row justify-starts'>
               <button className={`${styles.btn} bg-mainColorDark text-neutralLight`}>
                 <span>Send me a Message</span>
                 <span><MdOutlineLocalPostOffice /></span>
               </button>
             </div>
+
           </div>
 
           

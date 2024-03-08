@@ -1,4 +1,5 @@
 import { styles } from '@/styles'
+import Link from 'next/link'
 import React from 'react'
 
 const Logo = () => {
@@ -16,7 +17,10 @@ console.log(logoText)
   return (
     <div className='absolute bottom-0 left-0'>
       
-      <div className={`logoWrapper relative size-[150px] rounded-full ${styles.flexCenter} `}>
+      <Link
+        href={'#contact'} 
+        className={`logoWrapper relative size-[150px] rounded-full ${styles.flexCenter} `}
+      >
         
         <div className={`logo-circle absolute size-[100px] rounded-full ${styles.flexCenter} text-center tracking-widest leading-relaxed`}>
           Open<br />To<br />Work
@@ -26,7 +30,7 @@ console.log(logoText)
           {logoText}
         </div>
 
-      </div>
+      </Link>
 
     </div>
   )

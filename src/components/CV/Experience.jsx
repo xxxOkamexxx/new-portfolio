@@ -29,14 +29,14 @@ const Experience = () => {
       start: 'Oct.2012',
       end: 'Jan.2013',
       conpany: 'Altewai Saome',
-      position: 'Fashion Design Assistant',
+      position: 'Fashion Designer Assistant',
       locate: 'Malmö, Sweden',
     },
     {
       start: '2005',
       end: '2005',
       conpany: 'Nakanihon Engineering Consultants Co.',
-      position: 'CAD Operator / Design Department',
+      position: 'CAD Operator (Design Departmen)',
       locate: 'Nagoya, Japan',
     },
     {
