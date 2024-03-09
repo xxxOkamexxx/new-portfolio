@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
@@ -11,6 +11,7 @@ import { projectsMenu } from '@/constans';
 
 
 const Projects = () => {
+  const router = useRouter()
   
   return (
     <section
@@ -37,14 +38,17 @@ const Projects = () => {
                 <motion.div
                   key={item.id}
                   variants={fadeIn('up', 'tween', 0.2 + index/5, 1)}
+                  onClick={() => router.push(`/projects/${item.para}`)}
+                  className='cursor-pointer'
                 >
-                  <Link                    
-                    href={`/projects/${item.para}`}                   
-                    className={`${styles.projectCard} ${styles.headline4} ${styles.flexCenter} text-neutralDark `}
+                  <motion.div 
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}                        
+                    className={`${styles.projectCard} ${styles.headline4} ${styles.flexCenter} text-neutralDark hover:bg-focusColor hover:text-white`}
                   >             
                       {item.name}
                                   
-                  </Link>
+                  </motion.div>
                 </motion.div>
               )}
 

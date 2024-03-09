@@ -19,7 +19,7 @@ export const MenuItems = [
 ]
 
 // Link Items
-import { FaLinkedin, FaGithubSquare, FaDribbbleSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaDribbbleSquare, FaExternalLinkAlt } from "react-icons/fa";
 
 export const LinkItems = [
   {
@@ -39,6 +39,8 @@ export const LinkItems = [
   },
 ]
 
+
+// Projects Menu
 
 export const projectsMenu = [
   {
@@ -63,38 +65,43 @@ export const projectsMenu = [
   },
 ]
 
+// Projects List
 export const projectsList = [
   {
     id: 1,
     title: 'Tront Cupcake',
     type: 'web',
+    typename: 'Web Design',
     tools: ['Figma'],
     thumbnail: '/webdesign/tront-cupcake-thumbnail.png',
     img: '/webdesign/tront-cupcake.png',
     description: 'This is a task to redesign the landing page of Tront Cupcake&apos;s website. The current landing page is not only difficult to read but also lacks a clear main heading and call-to-action (CTA). Additionally, important sections such as product listings are missing from the homepage, making it ineffective. The goal is to focus on messaging, visualization, and effective CTAs to improve the overall user experience.',
     linkes:[
       { name: 'Dribble', 
-        url: 'https://dribbble.com/ChikageMolander', 
+        url: 'https://dribbble.com/shots/23750982-Webdesign-TrontCupcake', 
         icon: <FaDribbbleSquare size={16}/> 
       }
     ]
   },
   {
     id: 2,
-    title: 'Frontend 01',
+    title: 'TheMovie DB',
     type: 'frontend',
-    img: 'ooo.png',
+    typename: 'Frontend',
+    tools: ['Next.js 14', 'Tailwind', 'TheMovieDB-api'],
+    thumbnail: '/frontend/TMDB-thumbnail.png',
+    img: '',
+    description: 'I recreated the TMDB app using Next.js 14 and Tailwind CSS, building upon my previous experience with React.js. In addition, I implemented a feature that allows users to preview movie trailers. The main goal of this project is to enhance my skills in Next.js and Tailwind.',
+    linkes:[
+      { name: 'GitHub', 
+        url: 'https://github.com/xxxOkamexxx/movie-app-next14/tree/main', 
+        icon: <FaGithubSquare size={16}/> 
+      },
+      { name: 'Demo', 
+        url: 'https://movie-app-next14.vercel.app/discover/now_playing', 
+        icon: <FaExternalLinkAlt size={16}/> 
+      }
+    ]
   },
-  {
-    id: 3,
-    title: 'App Design 01',
-    type: 'app',
-    img: 'ooo.png',
-  },
-  {
-    id: 4,
-    title: 'Frontend 02',
-    type: 'frontend',
-    img: 'ooo.png',
-  },
+  
 ]

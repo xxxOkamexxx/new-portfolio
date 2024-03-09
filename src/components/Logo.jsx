@@ -1,6 +1,10 @@
-import { styles } from '@/styles'
+'use client'
 import Link from 'next/link'
 import React from 'react'
+
+import { styles } from '@/styles'
+import { motion } from 'framer-motion';
+import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
 
 const Logo = () => {
   const texts = 'Creative UX/UI Designer Frontend Developer - '
@@ -13,13 +17,17 @@ const Logo = () => {
       {text}
     </span>
   ))
-console.log(logoText)
+
   return (
-    <div className='absolute bottom-0 left-0'>
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}  
+      className='absolute bottom-0 left-0'
+    >
       
       <Link
         href={'#contact'} 
-        className={`logoWrapper relative size-[150px] rounded-full ${styles.flexCenter} `}
+        className={`logoWrapper relative size-[150px] rounded-full ${styles.flexCenter}`}
       >
         
         <div className={`logo-circle absolute size-[100px] rounded-full ${styles.flexCenter} text-center tracking-widest leading-relaxed`}>
@@ -32,7 +40,7 @@ console.log(logoText)
 
       </Link>
 
-    </div>
+    </motion.div>
   )
 }
 

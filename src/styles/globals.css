@@ -39,6 +39,11 @@
   .skillItem {
     @apply px-4 py-2 bg-neutralLight shadow-sm text-neutralDark
   }
+
+  /* Project type */
+  .projecttype {
+    @apply px-4 py-2 bg-neutralLight shadow-sm text-neutralDark
+  }
   
 }
 
@@ -61,12 +66,11 @@
   background-color: var(--mainColorDark);
   color: var(--neutralLight);
   font-size: 0.9rem;
-  transition: 1s;
 }
+
 .logoWrapper:hover
 .logo-circle {
   background-color: var(--focusColor);
-  transform: scale(1.1);
 }
 
 .logo-text {

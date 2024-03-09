@@ -46,7 +46,7 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }} 
-        className={`bg-neutralMedium relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-4 justify-between`}
+        className={`bg-neutralMedium relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-8 justify-between`}
       >
 
         {/* General Info */}
@@ -55,9 +55,9 @@ const About = () => {
           className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 gap-4'
         >
 
-          <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
+          <h3 className={`${styles.pageTitle} ${styles.headline3}`}>
             About Me
-          </h2>
+          </h3>
 
           <div className='flex justify-center flex-col gap-2'>
             <div className='w-[100%] h-[300px] bg-gray-200 flex justify-center items-center'>
