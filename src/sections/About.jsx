@@ -72,17 +72,21 @@ const About = () => {
 
             {/* Button */}
             <div className='flex flex-col lg:flex-row justify-starts'>
-              <button className={`${styles.btn} bg-mainColorDark text-neutralLight`}>
+              <motion.button 
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className={`${styles.btn} bg-mainColorDark text-neutralLight`}
+              >
                 <span>Download CV</span>
                 <span><MdOutlineFileDownload /></span>
-              </button>
+              </motion.button>
             </div>
           </div>
         </motion.div>
 
         {/* CV */}
         <motion.div 
-          variants={slideIn('right', 'tween', 0.2, 1)}
+          variants={slideIn('right', 'tween', 0.5, 1)}
           className='bg-white w-[100%] lg:w-[60%] flex flex-col justify-between'
         >
           <div>

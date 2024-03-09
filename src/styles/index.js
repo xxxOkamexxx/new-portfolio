@@ -28,13 +28,14 @@ export const styles = {
   textSmall: 'text-xs',
 
   // Buttons
-  btn: 'px-6 py-3 flex gap-2 items-center text-sm justify-center shadow-lg md:w-fit tracking-wider min-w-[200px]',
+  btn: 'px-6 py-3 flex gap-2 items-center text-sm justify-center shadow-lg md:w-fit tracking-wider min-w-[200px] hover:bg-focusColor',
 
   // Project card
   projectCard: 'h-[150px] bg-white text-center align-middle',
 
   // Timeline UI
   timelineCircle: 'absolute top-0 left-2 rounded-full w-4 h-4 bg-mainColorOrange z-20',
-  timelineBar: 'absolute top-2 left-3 bg-neutralMedium w-2 h-[100%] z-10',
+  
+  timelineBar: 'absolute top-2 left-3 bg-mainColorOrange/20 w-2 h-[100%] z-10',
 
 }

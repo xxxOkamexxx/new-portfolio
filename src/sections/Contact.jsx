@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 
 import { styles } from '@/styles'
+import { motion } from 'framer-motion';
 
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 
@@ -28,10 +31,14 @@ const Contact = () => {
             </p>
 
             <div className='flex flex-col md:flex-row justify-starts'>
-              <button className={`${styles.btn} bg-mainColorDark text-neutralLight`}>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }} 
+                className={`${styles.btn} bg-mainColorDark text-neutralLight`}
+              >
                 <span>Send me a Message</span>
                 <span><MdOutlineLocalPostOffice /></span>
-              </button>
+              </motion.button>
             </div>
 
           </div>

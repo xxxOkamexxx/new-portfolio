@@ -6,29 +6,12 @@ import Link from 'next/link'
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn } from '@/utils/motion';
+import { projectsMenu } from '@/constans';
 
 
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 'all',
-      name: 'All',
-    },
-    {
-      id: 'web-design',
-      name: 'Web Design',
-    },
-    {
-      id: 'app-design',
-      name: 'Application Design',
-    },
-    {
-      id: 'frontend',
-      name: 'Frontend',
-    },
-  ]
-
+  
   return (
     <section
       id='projects' 
@@ -50,13 +33,13 @@ const Projects = () => {
             </h2>
 
             <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-4 '>
-              {projects.map((item, index) => 
+              {projectsMenu.map((item, index) => 
                 <motion.div
                   key={item.id}
                   variants={fadeIn('up', 'tween', 0.2 + index/5, 1)}
                 >
                   <Link                    
-                    href={'#'}                   
+                    href={`/projects/${item.para}`}                   
                     className={`${styles.projectCard} ${styles.headline4} ${styles.flexCenter} text-neutralDark `}
                   >             
                       {item.name}

@@ -80,19 +80,23 @@ const Hero = () => {
           {/* Buttons Group */}
           <div className='flex flex-col md:flex-row justify-start gap-4 pt-8'> 
                     
-            <button 
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }} 
               className={`${styles.btn} bg-mainColorDark text-neutralLight`}
             >
               <span>Contact Me</span>
               <span><MdOutlineLocalPostOffice /></span>
-            </button>
+            </motion.button>
 
-            <button 
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }} 
               className={`${styles.btn} bg-mainColorOrange text-neutralLight`}
             >
               <span>Download CV</span>
               <span><MdOutlineFileDownload /></span>
-            </button>
+            </motion.button>
 
           </div>
         </div>
