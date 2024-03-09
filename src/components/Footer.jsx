@@ -12,10 +12,6 @@ const Footer = () => {
 
       <div className={`${styles.xPaddings} py-8 left-0 bottom-0 flex md:flex-row flex-col md:justify-between md:w-[60%] gap-4 items-center`}>
 
-        <div className='flex flex-row md:flex-col gap-2 items-center'>
-          <SnsLinkButtons />
-        </div>
-
         <div className='flex flex-col gap-2'>
           {MenuItems.map(menu => 
             <div
@@ -26,10 +22,14 @@ const Footer = () => {
           )}
         </div>
 
-        <div className='pb-4 flex flex-col justify-center gap-2'>
+        <div className='pb-4 flex flex-col justify-center gap-4'>
           <p>© ChikageMolander {new Date().getFullYear()}</p>
           <hr />
           <p className={`${styles.pText}`}>chikage.t.molander@gmail.com</p>
+
+          <div className='flex flex-row gap-4 items-center justify-center'>
+            <SnsLinkButtons />
+          </div>
         </div>
 
       </div>

@@ -53,7 +53,7 @@ const About = () => {
         {/* General Info */}
         <motion.div 
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 gap-4'
+          className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 md:p-8 gap-4'
         >
 
           <h3 className={`${styles.pageTitle} ${styles.headline3}`}>
@@ -111,7 +111,7 @@ const About = () => {
             </div>
 
             {/* CV display */}
-            <div className='p-4 pt-4'>
+            <div className='md:py-12 md:px-8 py-8 px-4'>
               {
                 item === 'skills' && <Skills />
               }

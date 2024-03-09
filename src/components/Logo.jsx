@@ -22,7 +22,7 @@ const Logo = () => {
     <motion.div
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}  
-      className='absolute bottom-0 left-0'
+      className='absolute bottom-0 right-0'
     >
       
       <Link
