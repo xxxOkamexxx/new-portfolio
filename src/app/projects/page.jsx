@@ -5,11 +5,10 @@ import { useRouter } from 'next/navigation';
 
 import ProjectNav from '@/components/ProjectNav'
 import { projectsList } from '@/constans'
+import { Footer } from '@/components';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
-import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
-
 
 
 const AllProject = () => {
@@ -33,10 +32,13 @@ const AllProject = () => {
           {projectsList && projectsList.map(item => 
             <div
               key={item.id}
-              className={`flex flex-col md:flex-row md:even:flex-row-reverse gap-6 py-4 ${styles.xPaddings}  even:bg-neutral-100`}
+              className={`flex flex-col md:flex-row md:even:flex-row-reverse gap-6 py-4 ${styles.xPaddings}  even:bg-neutral-100`}             
             >
               {/* Thumbnail */}
-              <div className='w-[100%] md:w-[50%]'>
+              <div 
+                className='w-[100%] md:w-[50%] hover:cursor-pointer'
+                onClick={() => router.push(`/detail/${item.id}`)}
+              >
                 <img src={item.thumbnail} alt="project image" className='shadow-md'/>
               </div>
 
@@ -90,6 +92,9 @@ const AllProject = () => {
         </div>
       
       </div>
+      
+      <Footer />
+
     </main>
   )
 }
