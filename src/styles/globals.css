@@ -97,3 +97,38 @@
 
 
 
+.circle01::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  background: var(--focusColor);
+  clip-path: circle(20% at right 60%);
+}
+
+.circle01::after {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  background: var(--mainColorOrange);
+  clip-path: circle(35% at 10% 10%);
+}
+
+.circle02::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 200%;
+  margin-top: 100px;
+  background: var(--mainColorOrange);
+  clip-path: circle(30% at right bottom);
+}

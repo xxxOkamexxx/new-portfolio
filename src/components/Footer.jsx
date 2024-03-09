@@ -1,21 +1,35 @@
 import React from 'react'
 
-import { LinkItems } from '@/constans'
+import { LinkItems, MenuItems } from '@/constans'
 import { styles } from '@/styles'
 import SnsLinkButtons from './SnsLinkButtons'
 
 const Footer = () => {
   return (
-    <div className={`bg-mainColorDark text-neutralLight ${styles.innerWidth}`}>
+    <div className={`bg-mainColorDark text-neutralLight ${styles.innerWidth} absolute`}>
     
-      <div className={`${styles.xPaddings} py-8 left-0 bottom-0`}>
+      <div className="hidden md:block circle02 z-0" />
 
-        <div className='pb-4'>
-          <p className={`${styles.textSmall}`}>chikage.t.molander@gmail.com</p>
+      <div className={`${styles.xPaddings} py-8 left-0 bottom-0 flex md:flex-row flex-col md:justify-between md:w-[60%] gap-4 items-center`}>
+
+        <div className='flex flex-row md:flex-col gap-2 items-center'>
+          <SnsLinkButtons />
         </div>
 
-        <div className='flex flex-row gap-4'>
-          <SnsLinkButtons />
+        <div className='flex flex-col gap-2'>
+          {MenuItems.map(menu => 
+            <div
+              key={menu.id}
+            >
+              <span>{menu.name}</span>
+            </div>
+          )}
+        </div>
+
+        <div className='pb-4 flex flex-col justify-center gap-2'>
+          <p>© ChikageMolander {new Date().getFullYear()}</p>
+          <hr />
+          <p className={`${styles.pText}`}>chikage.t.molander@gmail.com</p>
         </div>
 
       </div>

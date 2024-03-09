@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link';
 
 import { MdOutlineLocalPostOffice, MdOutlineFileDownload } from "react-icons/md";
 import { FaImage } from "react-icons/fa";
@@ -12,10 +11,11 @@ import SnsLinkButtons from '@/components/SnsLinkButtons'
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const Hero = () => {
-
 
   return (
     <section 
@@ -33,16 +33,15 @@ const Hero = () => {
         {/* Hero Image */}
         <motion.div 
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className='w-[100%] lg:w-[60vw] h-[350px] bg-gray-200 flex justify-center items-center relative'
+          className='w-[100%] h-[200px] lg:w-[60vw] md:h-[300px] flex justify-center items-center relative'
         >       
-          <FaImage size={36} /> 
           <Logo />    
         </motion.div>
 
         {/* Hero Texts */}
-        <div>
-          <div className='flex flex-col md:flex-row lg:justify-between items-center gap-4'>
-            <div className='w-[100%]'>
+        <div className='z-10'>
+          <div className='flex flex-col md:flex-row md:justify-between items-center gap-4'>
+            <div className='w-[70%]'>
 
               <motion.h1 
                 variants={textVariant(0.5)}
@@ -85,8 +84,9 @@ const Hero = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }} 
               className={`${styles.btn} bg-mainColorDark text-neutralLight`}
             >
-              <span>Contact Me</span>
-              <span><MdOutlineLocalPostOffice /></span>
+                <span>Contact Me</span>
+                <span><MdOutlineLocalPostOffice /></span>
+
             </motion.button>
 
             <motion.button

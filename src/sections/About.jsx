@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import React,{ useState } from 'react'
@@ -60,8 +61,12 @@ const About = () => {
           </h3>
 
           <div className='flex justify-center flex-col gap-2'>
-            <div className='w-[100%] h-[300px] bg-gray-200 flex justify-center items-center'>
-              <FaImage size={36} />
+            <div className='w-[100%] h-[300px] flex justify-center items-center'>
+              <img 
+                src="/Cv-photo.png" 
+                alt="cv-photo" 
+                className='h-[80%]'
+              />
             </div>
 
             <p className={`${styles.pText} text-left leading-6 pb-4`}>
