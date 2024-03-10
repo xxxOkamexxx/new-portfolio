@@ -80,7 +80,7 @@ const About = () => {
               <motion.button 
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className={`${styles.btn} bg-mainColorDark text-neutralLight`}
+                className={`${styles.btn} ${styles.darkBtn}`}
               >
                 <span>Download CV</span>
                 <span><MdOutlineFileDownload /></span>

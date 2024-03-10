@@ -81,7 +81,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-              className={`${styles.btn} bg-mainColorDark text-neutralLight`}
+              className={`${styles.btn} ${styles.darkBtn}`}
             >
                 <span>Contact Me</span>
                 <span><MdOutlineLocalPostOffice /></span>
@@ -91,7 +91,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-              className={`${styles.btn} bg-mainColorOrange text-neutralLight`}
+              className={`${styles.btn} ${styles.orangeBtn}`}
             >
               <span>Download CV</span>
               <span><MdOutlineFileDownload /></span>
