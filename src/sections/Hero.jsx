@@ -3,16 +3,14 @@
 import React from 'react'
 
 import { MdOutlineLocalPostOffice, MdOutlineFileDownload } from "react-icons/md";
-import { FaImage } from "react-icons/fa";
 
-import Logo from '@/components/Logo';
-import SnsLinkButtons from '@/components/SnsLinkButtons'
+
+import { Logo, SnsLinkButtons } from '@/components';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
+
 
 
 const Hero = () => {
@@ -26,7 +24,7 @@ const Hero = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className='flex flex-col lg:flex-row lg:justify-between gap-6 items-center'
+        className='flex flex-col lg:flex-row lg:justify-between gap-8 items-center'
       >
 
         {/* Hero Image */}

@@ -6,7 +6,7 @@ import { useParams, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 import { projectsList } from '@/constans'
-import ProjectNav from '@/components/ProjectNav'
+import { ProjectNav } from '@/components';
 import { styles } from '@/styles';
 
 

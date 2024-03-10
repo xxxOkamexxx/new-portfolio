@@ -11,10 +11,8 @@ import '../styles/about.css'
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
 
+import { Education, Skills, Experience } from '@/components';
 
-import Skills from '@/components/CV/Skills';
-import Education from '@/components/CV/Education';
-import Experience from '@/components/CV/Experience';
 
 
 const About = () => {

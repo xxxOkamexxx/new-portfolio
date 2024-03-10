@@ -3,7 +3,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 
-import ProjectNav from '@/components/ProjectNav'
+import { ProjectNav } from '@/components';
 import { projectsList } from '@/constans'
 
 import { styles } from '@/styles'

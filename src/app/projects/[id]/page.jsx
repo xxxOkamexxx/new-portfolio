@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation';
 
 import { projectsList } from '@/constans'
-import ProjectNav from '@/components/ProjectNav';
+import { ProjectNav } from '@/components';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';

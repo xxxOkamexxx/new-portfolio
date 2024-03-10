@@ -6,7 +6,7 @@ import { styles } from '@/styles'
 import { motion } from 'framer-motion';
 
 import { MdOutlineLocalPostOffice } from "react-icons/md";
-import ContactForm from '@/components/ContactForm';
+import { ContactForm } from '@/components';
 
 const Contact = () => {
   return (
