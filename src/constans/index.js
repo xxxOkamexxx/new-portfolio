@@ -90,7 +90,7 @@ export const projectsList = [
     typename: 'Frontend',
     tools: ['Next.js 14', 'Tailwind', 'TheMovieDB-api'],
     thumbnail: '/frontend/TMDB-thumbnail.png',
-    img: '',
+    img: '/frontend/TMDB.jpg',
     description: 'I recreated the TMDB app using Next.js 14 and Tailwind CSS, building upon my previous experience with React.js. In addition, I implemented a feature that allows users to preview movie trailers. The main goal of this project is to enhance my skills in Next.js and Tailwind.',
     linkes:[
       { name: 'GitHub', 

@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 
 import { projectsList } from '@/constans'
 import ProjectNav from '@/components/ProjectNav'
-import { Footer } from '@/components';
 import { styles } from '@/styles';
 
 
@@ -53,7 +52,6 @@ const Detailpage = () => {
         </div>
       </div>
       
-      <Footer />
     </main>
   )
 }
