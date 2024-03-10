@@ -60,7 +60,7 @@ const Hero = () => {
                 variants={textVariant(1.1)}
                 className='text-base tracking-wide leading-7'
               >
-                I am a front-end developer and UX/UI designer passionate about building user-friendly and visually appealing web solutions.
+                I am a front-end developer and UX/UI designer passionate about building user-friendly and visually appealing digital solutions, including websites and applications.
               </motion.p>
             </div>
 
