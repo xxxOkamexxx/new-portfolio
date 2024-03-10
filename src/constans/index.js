@@ -69,16 +69,16 @@ export const projectsMenu = [
 export const projectsList = [
   {
     id: 1,
-    title: 'Tront Cupcake',
+    title: 'Toront Cupcake',
     type: 'web',
     typename: 'Web Design',
     tools: ['Figma'],
-    thumbnail: '/webdesign/tront-cupcake-thumbnail.png',
-    img: '/webdesign/tront-cupcake.jpg',
-    description: 'This is a task to redesign the landing page of Tront Cupcake&apos;s website. The current landing page is not only difficult to read but also lacks a clear main heading and call-to-action (CTA). Additionally, important sections such as product listings are missing from the homepage, making it ineffective. The goal is to focus on messaging, visualization, and effective CTAs to improve the overall user experience.',
+    thumbnail: '/webdesign/toront-cupcake-thumbnail.png',
+    img: '/webdesign/toront-cupcake.jpg',
+    description: 'This is a task to redesign the landing page of Toront Cupcake&apos;s website. The current landing page is not only difficult to read but also lacks a clear main heading and call-to-action (CTA). Additionally, important sections such as product listings are missing from the homepage, making it ineffective. The goal is to focus on messaging, visualization, and effective CTAs to improve the overall user experience.',
     linkes:[
       { name: 'Dribble', 
-        url: 'https://dribbble.com/shots/23750982-Webdesign-TrontCupcake', 
+        url: 'https://dribbble.com/shots/23750982-Webdesign-TorontCupcake', 
         icon: <FaDribbbleSquare size={16}/> 
       }
     ]
