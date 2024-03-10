@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { LinkItems, MenuItems } from '@/constans'
+import { MenuItems } from '@/constans'
 import { styles } from '@/styles'
 import SnsLinkButtons from './SnsLinkButtons'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -14,11 +15,14 @@ const Footer = () => {
 
         <div className='flex flex-col gap-2'>
           {MenuItems.map(menu => 
-            <div
+        
+            <Link
               key={menu.id}
+              href={`#${menu.id}`}
             >
-              <span>{menu.name}</span>
-            </div>
+              {menu.name}
+            </Link>
+   
           )}
         </div>
 

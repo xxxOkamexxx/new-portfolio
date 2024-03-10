@@ -5,7 +5,6 @@ import { useParams, useRouter } from 'next/navigation';
 
 import { projectsList } from '@/constans'
 import ProjectNav from '@/components/ProjectNav';
-import { Footer } from '@/components';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
@@ -42,7 +41,7 @@ const ProjectsByType = () => {
       <ProjectNav />
 
       {/* Page title */}
-      <h3 className={`${styles.pageTitle} ${styles.headline3} ${styles.xPaddings} pt-8 pb-4`}>
+      <h3 className={`${styles.pageTitle} ${styles.headline3} ${styles.xPaddings} ${styles.yPaddings}`}>
         {title}
       </h3>
     
@@ -106,8 +105,6 @@ const ProjectsByType = () => {
 
         </div>  
       </div>
-      
-      <Footer />
 
     </main>
   )

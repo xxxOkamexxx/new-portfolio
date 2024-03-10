@@ -19,7 +19,6 @@ const Hero = () => {
 
   return (
     <section 
-      id='home' 
       className={`${styles.xPaddings} ${styles.yPaddings}`}
     >
       <motion.div 

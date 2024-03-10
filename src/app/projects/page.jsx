@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 
 import ProjectNav from '@/components/ProjectNav'
 import { projectsList } from '@/constans'
-import { Footer } from '@/components';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
@@ -20,7 +19,7 @@ const AllProject = () => {
       <ProjectNav />
 
       {/* Page title */}
-      <h3 className={`${styles.pageTitle} ${styles.headline3} ${styles.xPaddings} pt-8 pb-4`}>
+      <h3 className={`${styles.pageTitle} ${styles.headline3} ${styles.xPaddings} ${styles.yPaddings}`}>
         All Project
       </h3>
 
@@ -92,8 +91,6 @@ const AllProject = () => {
         </div>
       
       </div>
-      
-      <Footer />
 
     </main>
   )
