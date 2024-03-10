@@ -11,7 +11,7 @@ const Logo = () => {
   const logoText = texts.split('').map((text, i) => (
     <span 
       key={i}
-      style={{ transform: `rotate(${i * 8.2}deg)` }}
+      style={{ transform: `rotate(${i * 8}deg)` }}
       className='uppercase font-mono'
     >
       {text}
