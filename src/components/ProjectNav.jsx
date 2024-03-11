@@ -15,7 +15,7 @@ const ProjectNav = () => {
       className={`${styles.innerWidth}`}
     >
 
-      <div className={`${styles.xPaddings} ${styles.navPadding} flex justify-between`}>
+      <div className={`${styles.xPaddings} ${styles.navPadding} flex justify-end`}>
 
 
         <div className={`${styles.flexEnd} gap-6`}>
