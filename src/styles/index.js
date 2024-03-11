@@ -34,7 +34,7 @@ export const styles = {
   orangeBtn: 'bg-mainColorOrange text-neutralLight',
 
   // form
-  inputBox: 'border-[1px] valid:border-green-500 border-neutralMedium focus:border-focusColor',
+  inputBox: 'border-[1px] valid:border-green-500 border-neutralMedium focus:border-focusColor px-4 py-2',
 
   // Project card
   projectCard: 'h-[150px] bg-white text-center align-middle',

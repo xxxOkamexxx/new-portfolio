@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 
 import { styles } from '@/styles';
 import { MdOutlineSend } from "react-icons/md";
@@ -7,9 +7,27 @@ import { motion } from 'framer-motion';
 
 
 const ContactForm = () => {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message }),
+    }).then((res) => {
+      if(res.status === 200) console.log(res.status,'success')
+    })
+  }
+
   return (
     <div>
-      <form className='flex flex-col gap-4'>
+      <form 
+        onSubmit={handleSubmit}
+        className='flex flex-col gap-4'
+      >
         {/* Name */}
         <div className='flex flex-col'>
           <label
@@ -23,6 +41,8 @@ const ContactForm = () => {
             className={`${styles.inputBox}`}
             type="text" 
             id='name' 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             required 
           />
         </div>
@@ -40,6 +60,8 @@ const ContactForm = () => {
             className={`${styles.inputBox}`}
             type="email" 
             id='email' 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required 
           />
         </div>
@@ -56,6 +78,8 @@ const ContactForm = () => {
             className={`${styles.inputBox} min-h-[80px]`}
             name="message" 
             id='message' 
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             required 
           />
         </div>
@@ -64,6 +88,7 @@ const ContactForm = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }} 
           className={`${styles.btn} ${styles.darkBtn}`}
+          type='submit'
         >
             <span>Contact Me</span>
             <span><MdOutlineSend /></span>
