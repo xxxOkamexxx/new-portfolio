@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation';
 
 import { projectsList } from '@/constans'
-import { ProjectNav } from '@/components';
+import { BackToHome, ProjectNav } from '@/components';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
@@ -41,11 +41,16 @@ const ProjectsByType = () => {
       <ProjectNav />
 
       {/* Page title */}
-      <h3 className={`${styles.pageTitle} ${styles.headline3} ${styles.xPaddings} ${styles.yPaddings}`}>
-        {title}
-      </h3>
-    
-      
+      <div className={`${styles.xPaddings} pt-8`}>
+
+        <BackToHome />
+
+        <h3 className={`${styles.pageTitle} ${styles.headline3} `}>
+          {title}
+        </h3>
+
+      </div>
+
       {/* Projects list */}
       <div className={`grid grid-cols-1`}>
         

@@ -7,6 +7,7 @@ import Education from "./CV/Education";
 import Experience from "./CV/Experience";
 import Skills from "./CV/Skills";
 import ContactForm from "./ContactForm";
+import BackToHome from "./BackToHome";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Experience,
   Skills,
   ContactForm,
+  BackToHome,
 }

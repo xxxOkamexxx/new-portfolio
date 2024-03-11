@@ -3,7 +3,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 
-import { ProjectNav } from '@/components';
+import { BackToHome, ProjectNav } from '@/components';
 import { projectsList } from '@/constans'
 
 import { styles } from '@/styles'
@@ -18,10 +18,16 @@ const AllProject = () => {
       
       <ProjectNav />
 
-      {/* Page title */}
-      <h3 className={`${styles.pageTitle} ${styles.headline3} ${styles.xPaddings} ${styles.yPaddings}`}>
-        All Project
-      </h3>
+        <div className={`${styles.xPaddings} pt-8`}>
+
+          <BackToHome />
+
+          {/* Page title */}
+          <h3 className={`${styles.pageTitle} ${styles.headline3}`}>
+            All Project
+          </h3>
+
+        </div>
 
 
       {/* Projects list */}
