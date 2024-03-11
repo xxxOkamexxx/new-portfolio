@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import { styles } from '@/styles';
 import { MdOutlineSend } from "react-icons/md";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 import { motion } from 'framer-motion';
 
 
@@ -10,6 +11,7 @@ const ContactForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [status, setStatus] = useState(null)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -18,12 +20,56 @@ const ContactForm = () => {
       method: "POST",
       body: JSON.stringify({ name, email, message }),
     }).then((res) => {
-      if(res.status === 200) console.log(res.status,'success')
+      if(res.status === 200) {
+        
+        setName('')
+        setEmail('')
+        setMessage('')
+        setStatus('success')
+
+        }
+        else { setStatus('error')}
     })
   }
+  
 
   return (
     <div>
+      {/* Success Message */}
+      {status === 'success' && 
+        <div className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+          <div className="flex gap-4">
+
+            <button onClick={() => setStatus(null)}>
+              <IoIosCloseCircleOutline size={16} />
+            </button>
+              
+            <p className="font-bold">
+              Message has been sent.
+            </p>   
+                              
+          </div>
+        </div>
+      }
+
+      {/* Error Message */}
+      {status === 'error' && 
+        <div className="bg-red-100 border-t-4 border-red-400 rounded-b text-red-700 px-4 py-3 shadow-md" role="alert">
+        <div className="flex gap-4">
+
+          <button onClick={() => setStatus(null)}>
+            <IoIosCloseCircleOutline size={16} />
+          </button>
+            
+          <p className="font-bold">
+            Something not ideal might be happening.
+          </p>   
+                            
+        </div>
+      </div>     
+      }
+
+
       <form 
         onSubmit={handleSubmit}
         className='flex flex-col gap-4'

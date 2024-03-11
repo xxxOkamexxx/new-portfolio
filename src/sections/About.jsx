@@ -12,6 +12,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
 
 import { Education, Skills, Experience } from '@/components';
+import { getPdfFile } from '@/utils/getPdfFile';
 
 
 
@@ -79,6 +80,7 @@ const About = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className={`${styles.btn} ${styles.darkBtn}`}
+                onClick={getPdfFile}
               >
                 <span>Download CV</span>
                 <span><MdOutlineFileDownload /></span>

@@ -1,11 +1,12 @@
 'use client'
 
 import React from 'react'
+import { useRouter } from 'next/navigation';
 
 import { MdOutlineLocalPostOffice, MdOutlineFileDownload } from "react-icons/md";
 
-
 import { Logo, SnsLinkButtons } from '@/components';
+import { getPdfFile } from '@/utils/getPdfFile';
 
 import { styles } from '@/styles'
 import { motion } from 'framer-motion';
@@ -14,6 +15,7 @@ import { staggerContainer, textVariant, slideIn } from '@/utils/motion';
 
 
 const Hero = () => {
+  const router = useRouter()
 
   return (
     <section 
@@ -24,7 +26,7 @@ const Hero = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className='flex flex-col lg:flex-row lg:justify-between gap-8 items-center'
+        className='flex flex-col md:flex-row md:justify-between gap-8 items-center'
       >
 
         {/* Hero Image */}
@@ -80,6 +82,7 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }} 
               className={`${styles.btn} ${styles.darkBtn}`}
+              onClick={() => router.push('#contact')}
             >
                 <span>Contact Me</span>
                 <span><MdOutlineLocalPostOffice /></span>
@@ -90,6 +93,7 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }} 
               className={`${styles.btn} ${styles.orangeBtn}`}
+              onClick={getPdfFile}
             >
               <span>Download CV</span>
               <span><MdOutlineFileDownload /></span>
