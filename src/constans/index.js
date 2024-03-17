@@ -103,5 +103,18 @@ export const projectsList = [
       }
     ]
   },
+  {
+    id: 3,
+    title: 'RoommateFindApp',
+    type: 'app-design',
+    typename: 'Application Design',
+    tools: ['Figma',],
+    thumbnail: '/appdesign/RoommateFindAppThumbnail.png',
+    img: '/appdesign/RoommateFindApp.png',
+    description: 'This task focuses on designing the user experience (UX) of the RoommateMatch Application, specifically from the initial signup process to completion. Authentication during signup enhances user trust and safety.',
+    linkes:[
+      
+    ]
+  },
   
 ]
