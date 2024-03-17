@@ -46,18 +46,21 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }} 
-        className={`bg-neutralMedium relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-8 justify-between`}
+        className={`relative flex lg:flex-row flex-col gap-4 ${styles.xPaddings} py-8 justify-between`}
       >
 
         {/* General Info */}
         <motion.div 
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className='bg-white w-[100%] lg:w-[40%] flex flex-col p-4 md:p-8 gap-4'
+          className='lg:w-[40%] flex flex-col px-0 py-4 md:p-8 gap-4'
         >
+          <div className='flex flex-row gap-2'>
+            <div className='w-2 bg-mainColorOrange' />
 
-          <h3 className={`${styles.pageTitle} ${styles.headline3}`}>
-            About Me
-          </h3>
+            <h3 className={`${styles.pageTitle} ${styles.headline3}`}>
+              About Me
+            </h3>
+          </div>
 
           <div className='flex justify-center flex-col gap-2'>
             <div className='w-[100%] h-[300px] flex justify-center items-center'>
@@ -92,7 +95,7 @@ const About = () => {
         {/* CV */}
         <motion.div 
           variants={slideIn('right', 'tween', 0.5, 1)}
-          className='bg-white w-[100%] lg:w-[60%] flex flex-col justify-between'
+          className='w-[100%] lg:w-[60%] flex flex-col justify-between'
         >
           <div>
             {/* Menu bar */}
@@ -102,7 +105,7 @@ const About = () => {
                 <div 
                   key={menu.id}
                   onClick={() => setItem(`${menu.id}`)}
-                  className={`text-neutralDark font-semibold py-2 ${item === menu.id ? 'activeMenu' : ''}`}
+                  className={`text-neutralDark cursor-pointer font-semibold py-2 ${item === menu.id ? 'activeMenu' : ''}`}
                 >
                   {menu.title}
                 </div>

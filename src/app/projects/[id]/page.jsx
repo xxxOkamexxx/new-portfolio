@@ -52,7 +52,7 @@ const ProjectsByType = () => {
       </div>
 
       {/* Projects list */}
-      <div className={`grid grid-cols-1`}>
+      <div className={`grid grid-cols-1 pb-[100px]`}>
         
         <div className={`flex flex-col gap-4`}>
           {projectsList

@@ -1,5 +1,6 @@
 import { Navbar, Footer } from "@/components"; 
 import { About, Contact, Hero, Projects } from "@/sections";
+import { styles } from "@/styles";
 export default function Home() {
   return (
     <main className={`bg-neutralLight overflow-hidden`}>
@@ -15,6 +16,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
+      
       </div>
     </main>
   );

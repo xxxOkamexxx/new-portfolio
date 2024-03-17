@@ -19,6 +19,7 @@ const Footer = () => {
             <Link
               key={menu.id}
               href={`#${menu.id}`}
+              className='hover:text-focusColor hover:font-semibold'
             >
               {menu.name}
             </Link>

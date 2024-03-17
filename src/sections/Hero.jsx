@@ -51,7 +51,7 @@ const Hero = () => {
 
               <motion.h3
                  variants={textVariant(0.8)} 
-                className={` ${styles.headline3} text-neutralDark pb-4 tracking-wide`} 
+                className={` ${styles.headline3} text-neutralDark pt-2 pb-4 tracking-wide`} 
               >
                 Frontend developer  UX/UI-designer
               </motion.h3>

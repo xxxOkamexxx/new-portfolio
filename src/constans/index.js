@@ -19,23 +19,23 @@ export const MenuItems = [
 ]
 
 // Link Items
-import { FaLinkedin, FaGithubSquare, FaDribbbleSquare, FaExternalLinkAlt } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaDribbble, FaExternalLinkAlt } from "react-icons/fa";
 
 export const LinkItems = [
   {
     id: 'linkedin',
     url: 'https://www.linkedin.com/in/chikage-takahashi-molander-542a71220/',
-    icon: <FaLinkedin size={20} />
+    icon: <FaLinkedinIn size={20} />
   },
   {
     id: 'github',
     url: 'https://github.com/xxxOkamexxx',
-    icon: <FaGithubSquare size={20}  />
+    icon: <FaGithub size={20}  />
   },
   {
     id: 'dribbble',
     url: 'https://dribbble.com/ChikageMolander',
-    icon: <FaDribbbleSquare size={20}  />
+    icon: <FaDribbble size={20}  />
   },
 ]
 
@@ -79,7 +79,7 @@ export const projectsList = [
     linkes:[
       { name: 'Dribble', 
         url: 'https://dribbble.com/shots/23750982-Webdesign-TorontCupcake', 
-        icon: <FaDribbbleSquare size={16}/> 
+        icon: <FaDribbble size={20}/> 
       }
     ]
   },
@@ -95,11 +95,11 @@ export const projectsList = [
     linkes:[
       { name: 'GitHub', 
         url: 'https://github.com/xxxOkamexxx/movie-app-next14/tree/main', 
-        icon: <FaGithubSquare size={16}/> 
+        icon: <FaGithub size={20}/> 
       },
       { name: 'Demo', 
         url: 'https://movie-app-next14.vercel.app/discover/now_playing', 
-        icon: <FaExternalLinkAlt size={16}/> 
+        icon: <FaExternalLinkAlt size={20}/> 
       }
     ]
   },

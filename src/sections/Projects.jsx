@@ -28,10 +28,13 @@ const Projects = () => {
 
 
           <div className='w-[100%] flex flex-col p-4 gap-4'>
-
-            <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
-              Projects
-            </h2>
+            
+            <div className='flex flex-row gap-2'>
+              <div className='w-2 bg-mainColorOrange' />
+              <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
+                Projects
+              </h2>
+            </div>
 
             <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-4 '>
               {projectsMenu.map((item, index) => 
@@ -44,7 +47,7 @@ const Projects = () => {
                   <motion.div 
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}                        
-                    className={`${styles.projectCard} ${styles.headline4} ${styles.flexCenter} text-neutralDark hover:bg-focusColor hover:text-white`}
+                    className={`${styles.projectCard} ${styles.headline4} ${styles.flexCenter} text-neutralDark hover:bg-focusColor hover:text-white shadow-md min-h-[180px]`}
                   >             
                       {item.name}
                                   

@@ -10,6 +10,7 @@ import { styles } from '@/styles'
 import { motion } from 'framer-motion';
 
 
+
 const AllProject = () => {
   const router = useRouter()
 
@@ -31,7 +32,7 @@ const AllProject = () => {
 
 
       {/* Projects list */}
-      <div className={`grid grid-cols-1`}>
+      <div className={`grid grid-cols-1 pb-[100px]`}>
         
         <div className={`flex flex-col gap-4`}>
           {projectsList && projectsList.map(item => 
@@ -94,6 +95,10 @@ const AllProject = () => {
 
             </div>
           )}
+        </div>
+
+        <div className='flex justify-center pt-4'>
+ 
         </div>
       
       </div>

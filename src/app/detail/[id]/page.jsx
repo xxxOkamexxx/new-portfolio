@@ -3,11 +3,11 @@
 
 import { useParams, useRouter } from 'next/navigation';
 
+import { styles } from '@/styles';
 import { motion } from 'framer-motion';
 
 import { projectsList } from '@/constans'
-import { ProjectNav } from '@/components';
-import { styles } from '@/styles';
+import { BackToHome, ProjectNav } from '@/components';
 
 
 const Detailpage = () => {
@@ -20,7 +20,10 @@ const Detailpage = () => {
     <main>
       <ProjectNav />
      
-      <div className={`${styles.yPaddings} ${styles.xPaddings}`}>       
+      <div className={`${styles.xPaddings} pt-8`}>  
+
+        <BackToHome />
+           
         <div>
           {projectsList
           .filter(item => item.id === id)

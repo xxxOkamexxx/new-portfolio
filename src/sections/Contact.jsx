@@ -22,11 +22,11 @@ const Contact = () => {
         {/* Contact form */}
         <div className='flex flex-col gap-4'>
 
-          <h2 className={`${styles.pageTitle} ${styles.headline3}`}>
+          <h2 className={`${styles.pageTitle} font-bold text-4xl text-focusColor`}>
             Get in touch
           </h2>
 
-          <p>
+          <p className={`${styles.headline4} font-medium text-neutralDark leading-6`}>
             Thank you for your interest. If you have any job requests or questions, please feel free to contact me. I look forward to assisting you.
           </p>
 
