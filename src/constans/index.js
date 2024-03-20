@@ -105,8 +105,8 @@ export const projectsList = [
   },
   {
     id: 3,
-    title: 'RoommateFindApp',
-    type: 'app-design',
+    title: 'Roommate Find App - SHARESPACE',
+    type: 'app',
     typename: 'Application Design',
     tools: ['Figma',],
     thumbnail: '/appdesign/RoommateFindAppThumbnail.png',
